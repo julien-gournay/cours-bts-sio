@@ -1,0 +1,55 @@
+<html>
+<head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        .retour{
+            text-align: center;
+            display: block;
+            color: green;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>-- TP 4 --</h1>
+        <h2>Exercice 2</h2>
+        <a class="retour" href="monCode.html">Retour au TP N°4</a>
+    </div>
+
+    <script>
+    function countEqualNumbers(a, b, c) {
+    let count = 0;
+    if (a === b) {
+        count++;
+    }
+    if (a === c) {
+        count++;
+    }
+    if (b === c) {
+        count++;
+    }
+    return count;
+    }
+
+    let a = prompt("Entrez un nombre : ");
+    let b = prompt("Entrez un autre nombre : ");
+    let c = prompt("Entrez un dernier nombre : ");
+
+    let result = countEqualNumbers(a, b, c);
+    alert("Le nombre de valeurs égales est de : " + result);
+    </script>
+</body>
+</html>

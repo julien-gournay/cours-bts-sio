@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 4</title>
+</head>
+<body>
+    <h1>Exercice 4</h1>
+    <p><strong>On se propose de déterminer le nombre de fois que les lettres : ‘r’, ‘R’- ‘s’, ‘S’, -‘v’, ‘V’ figurent dans un texte saisi au clavier (en ignorant la casse).<br>Ecrire un script qui réalise le traitement.</strong></p>
+    <script>
+      let texteLu = prompt("Taper votre texte");
+      texteLu=texteLu.toUpperCase();
+
+      let compteurR = 0;
+      let compteurS = 0;
+      let compteurV = 0;
+
+      for (let i=0; i<texteLu.length; i++) {
+        let lettre = texteLu[i];
+      
+
+        switch (lettre){
+          case "R":
+            compteurR+=1;
+            break;
+          case "S":
+            compteurS+=1;
+            break;
+          case "V":
+            compteurV++;
+            break;
+        }
+      }
+
+      document.write("'"+texteLu+"'"+"<br>");
+      document.write("Le texte contient R="+compteurR+", S="+compteurS+" et V="+compteurV);
+    </script>
+</body>
+</html>

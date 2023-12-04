@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            a{
+                text-decoration: none;
+                color: blue;
+            }
+            .retour{
+                text-align: center;
+                display: block;
+                color: green;
+            }
+            h1{
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>-- TP 2 --</h1>
+            <h2>Exercice 3</h2>
+            <a class="retour" href="monCode.html">Retour au TP N°2</a>
+        </div>
+
+        <script>
+            var coûtP
+            var marque = prompt("Quelle est la marque de votre véhicule ?", "");
+            var consoMoyenne = prompt("Quelle est votre consommation moyenne pour 100km ?", "");
+            var coût = prompt("Quel est le coût d'1L de carburant ?", "");
+            var kilometre = prompt("Combien de KM avez vous effectué ?", "");
+
+            const anneeA = new Date().getFullYear();
+			coûtP = kilometre/100*consoMoyenne*coût
+            alert("Le cout total d'un parcours de " + kilometre + " kilomètres effectuté avec un véhicule de marque " + marque + " consommant " + consoMoyenne + " litres pour 100 kilomètres en moyenne avec un prix au litre du carburant de " + coût + " euro est de " + coûtP + " euros.");
+        </script>
+   </body>
+</html>

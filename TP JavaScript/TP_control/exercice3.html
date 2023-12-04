@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 3</title>
+</head>
+<body>
+    <h1>Exercice 3</h1>
+    <p><strong>On se propose de calculer la somme d’une série de nombres décimaux saisis au clavier, la série des nombres se termine par le caractère ‘$’.<br>Ecrire un script sui répond à la question.</strong></p>
+    <script>
+        let nombreLu = 0.0;
+        let sommeDenombres = 0.0;
+        let caractereLu = prompt("Saisir un nombre");
+
+
+        while (caractereLu != "$") {
+            nombreLu = Number(caractereLu);
+            sommeDenombres += nombreLu;
+            caractereLu = prompt("Saisir un nombre ou $ pour finir :");
+        }
+
+        document.write("La somme est de : " + sommeDenombres);
+    </script>
+</body>
+</html>

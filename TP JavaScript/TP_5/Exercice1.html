@@ -1,0 +1,50 @@
+<html>
+<head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        .retour{
+            text-align: center;
+            display: block;
+            color: green;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>-- TP 5 --</h1>
+        <h2>Exercice 1</h2>
+        <a class="retour" href="monCode.html">Retour au TP N°5</a>
+    </div>
+
+    <p id="demo1"></p><br>
+
+    <script>
+        let text = "";
+        
+        for (let i = 0; i <= 99; i++) {
+            if (i%10 == 0){
+                text += "<strong>" +"<br>" +"Le nombre est " + i + "</strong>" +"<br>";
+            }
+            else{
+                text += "Le nombre est " + i + "<br>";
+            }
+        }
+
+        document.getElementById("demo1").innerHTML = text;
+   
+    </script>
+</body>
+</html>

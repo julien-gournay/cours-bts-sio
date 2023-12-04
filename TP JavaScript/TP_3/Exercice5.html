@@ -1,0 +1,47 @@
+<html>
+<head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        .retour{
+            text-align: center;
+            display: block;
+            color: green;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>-- TP 3 --</h1>
+        <h2>Exercice 5</h2>
+        <a class="retour" href="monCode.html">Retour au TP N°3</a>
+    </div>
+
+    <title>JavaScript instruction if (si)</title>
+
+    <script>
+        const facture = parseInt(prompt("Montant de la facture ?"));
+
+        if (facture > 500) {
+            result = facture*0.05
+            result = facture-result
+            alert("La somme à payer sera de " + result + " €");
+        } else {
+            alert("Aucune remise n’est effectuée");
+        }
+    </script>
+
+</body>
+</html

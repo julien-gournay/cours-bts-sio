@@ -1,0 +1,47 @@
+<html>
+<head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        .retour{
+            text-align: center;
+            display: block;
+            color: green;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>-- TP 3 --</h1>
+        <h2>Exercice 6</h2>
+        <a class="retour" href="monCode.html">Retour au TP N°3</a>
+    </div>
+
+    <title>JavaScript instruction if (si)</title>
+
+    <script>
+        const montant = parseInt(prompt("Montant de la commande ?"));
+
+        if (montant < 10000) {
+            alert("Vous n'avez aucune réduction");
+        } else if (montant <= 25000){
+            alert("La réduction sera de 5%");
+        } else {
+            alert("La réduction sera de 10%");
+        }
+    </script>
+
+</body>
+</html

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            a{
+                text-decoration: none;
+                color: blue;
+            }
+            .retour{
+                text-align: center;
+                display: block;
+                color: green;
+            }
+            h1{
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>-- TP 2 --</h1>
+            <h2>Exercice 1</h2>
+            <a class="retour" href="monCode.html">Retour au TP N°2</a>
+        </div>
+        
+        <script>
+            //var jour, mois, annee;
+            var jour = prompt("Jour de votre naissance : ", "");
+            var mois = prompt("Mois de votre naissance : ", "");
+            var annee = prompt("Année de votre naissance : ", "");
+			
+			mois = parseInt(mois);
+			
+            alert("Tu es né le: " + jour + "/" + mois + "/" + annee);
+        </script>
+   </body>
+</html>

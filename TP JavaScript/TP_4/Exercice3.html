@@ -1,0 +1,49 @@
+<html>
+<head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        .retour{
+            text-align: center;
+            display: block;
+            color: green;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>-- TP 4 --</h1>
+        <h2>Exercice 3</h2>
+        <a class="retour" href="monCode.html">Retour au TP N°4</a>
+    </div>
+
+    <script>
+        let age = parseInt(prompt("Indiquer votre age")); 
+    
+        if (age >= 6 && age <= 7) {
+        text = "Mini-Poussin";
+        } else if (age >= 8 && age <= 9) {
+        text = "Poussin";
+        } else if (age >= 10 && age <= 11) {
+        text = "Minime";
+        } else if (age >= 12) {
+        text = "Cadet";
+        }   
+    
+        alert("Vous etes dans la catègorie : " + text);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<html>
+<head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        .retour{
+            text-align: center;
+            display: block;
+            color: green;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>-- TP Final --</h1>
+        <h2>Exercice 0</h2>
+        <a class="retour" href="monCode.html">Retour au TP Final</a>
+    </div>
+    
+    <table>
+        <tr>
+            <td>Devoir</td>
+            <td>note</td>
+        </tr>
+    </table>
+
+
+    <script>
+        const tnotes =[]
+        const somme = 0;
+        const moyenne = 0;
+
+        const notes = prompt("Veuillez saisir une note (ou $ pour arrêter): ");
+        while (notes != "$") {
+            const notes = prompt("Veuillez saisir une note (ou $ pour arrêter): ");
+
+            tnotes.push({
+                devoir: notes.length + 1,
+                note: note,
+            });
+        }
+
+
+
+
+        document.write("<table>");
+        for (const tnotes of notes) {
+        document.write(`<tr><td>${note.devoir}</td><td>${note.note}</td></tr>`);
+        }
+        document.write("</table>");
+
+
+        //for (let i = 0; i < tnotes.length; i++) {
+        //    somme += array[i];
+        //}
+        //moyenne = somme/tnotes.length;
+
+        //document.write(moyenne)
+
+        //if(moyenne<10){
+        //    alerte("Mention : Insuffisante");
+        //}
+        //else if(moyenne >= 10 & moyenne < 12){
+        //    alerte("Mention : Assez bien");
+        //}
+        //else if(moyenne >= 12 & moyenne < 15){
+        //    alerte("Mention : Bien");
+        //}
+        //else if(moyenne >= 15){
+        //    alerte("Mention : Très bien");
+        //}
+        
+    </script>
+</body>
+</html>

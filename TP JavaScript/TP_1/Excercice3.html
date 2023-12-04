@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            a{
+                text-decoration: none;
+                color: blue;
+            }
+            .retour{
+                text-align: center;
+                display: block;
+                color: green;
+            }
+            h1{
+                text-align: center;
+            }
+            h2{
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>-- TP 1 --</h1>
+            <h2>Exercice 3</h2>
+            <a class="retour" href="monCode.html">Retour au TP N°1</a>
+        </div>
+
+        <script>
+            const PI = 3.14;
+            var rayon1, rayon2, surface1, surface2, difference;
+
+            rayon1 = 5.5;
+            rayon2 = 3.5;
+            surface1 = PI*rayon1*rayon1;
+            surface2 = PI*rayon2*rayon2;
+            difference = surface1-surface2;
+            document.write("Surface 1 : " + surface1+"<br>" + "Surface 2 : " + surface1+"<br>" + "Difference : " + difference);
+        </script>
+    </body>
+</html>
+
+

@@ -1,0 +1,85 @@
+<html>
+<head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        .retour{
+            text-align: center;
+            display: block;
+            color: green;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>-- TP Final --</h1>
+        <h2>Exercice 0</h2>
+        <a class="retour" href="monCode.html">Retour au TP Final</a>
+    </div>
+    
+    <table>
+        <tr>
+            <td>Devoir</td>
+            <td>note</td>
+        </tr>
+    </table>
+
+
+    <script>
+        // Initialisation du tableau
+        const notes = [];
+
+        // Boucle de saisie des notes
+        while (true) {
+        // Demande la saisie d'une note
+        const note = prompt("Veuillez saisir une note (ou $ pour arrêter): ");
+
+        // Si la note est égale à $, on quitte la boucle
+        if (note === "$") {
+            break;
+        }
+
+        // Ajout de la note au tableau
+        notes.push({
+            numero: notes.length + 1,
+            note: note,
+        });
+        }
+
+        // Affichage du tableau
+        document.write("<table>");
+        for (const note of notes) {
+        document.write(`<tr><td>${note.numero}</td><td>${note.note}</td></tr>`);
+        }
+        document.write("</table>");
+    </script>
+
+    <style>
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        th, td {
+        border: 1px solid black;
+        padding: 5px;
+        }
+
+        th {
+        background-color: #c0c0c0;
+        }
+    </style>
+</body>
+</html>
